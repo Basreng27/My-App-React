@@ -1,6 +1,6 @@
-import { cilSpeedometer } from "@coreui/icons";
+import { cilDrop, cilPencil, cilSpeedometer } from "@coreui/icons";
 import CIcon from "@coreui/icons-react";
-import { CNavItem } from "@coreui/react";
+import { CNavItem, CNavTitle } from "@coreui/react";
 import React from "react";
 
 const _nav = [
@@ -13,6 +13,22 @@ const _nav = [
       color: "info",
       text: "NEW",
     },
+  },
+  {
+    component: CNavTitle,
+    name: 'Theme',
+  },
+  {
+    component: CNavItem,
+    name: 'Colors',
+    to: '/theme/colors',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Typography',
+    to: '/theme/typography',
+    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
 ];
 
