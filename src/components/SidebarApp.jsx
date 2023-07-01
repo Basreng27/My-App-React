@@ -14,7 +14,6 @@ import { SidebarNavApp } from "./SidebarNavApp";
 
 // Sidebar Config
 import navigation from "./_nav";
-console.log("SIDEBAR");
 const SidebarApp = () => {
   const dispatch = useDispatch();
   const unfoldable = useSelector((state) => state.sidebarUnfoldable);
@@ -29,7 +28,7 @@ const SidebarApp = () => {
         dispatch({ type: "set", sidebarShow: visible });
       }}
     >
-      <CSidebarBrand className="d-none d-m-flex" to="/">
+      <CSidebarBrand className="d-none d-md-flex" to="/">
         <CIcon className="sidebar-brand-full" icon={logoNegative} height={35} />
         <CIcon className="sidebar-brand-narrow" icon={sygnet} height={35} />
       </CSidebarBrand>

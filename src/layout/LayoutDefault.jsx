@@ -1,13 +1,13 @@
 import React from "react";
 import SidebarApp from "../components/SidebarApp";
+import HeaderApp from "../components/HeaderApp";
 
 const LayoutDefault = () => {
-  console.log("LAYOUT DEFAULT");
   return (
     <div>
       <SidebarApp />
       <div className="wrapper d-flex flex-column min-vh-100 bg-light">
-        {/* APP HEADER */}
+        <HeaderApp />
         <div className="body flex-grow-1 px-3">{/* APP CONTENT */}</div>
         {/* APP FOOTER */}
       </div>

@@ -1,16 +1,11 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import LayoutDefault from "../layout/LayoutDefault";
 import { Component, Suspense } from "react";
-import LoadingApp from "../components/LoadingApp"
-import '../scss/style.scss'
-
-// Layout
-// const LayoutDefault = React.lazy(() => import('../layout/LayoutDefault'))
+import LoadingApp from "../components/LoadingApp";
+import "../scss/style.scss";
 
 class App extends Component {
   render() {
-    console.log("APP");
-
     return (
       <HashRouter>
         <Suspense fallback={<LoadingApp />}>
@@ -22,5 +17,8 @@ class App extends Component {
     );
   }
 }
+
+// Layout
+// const LayoutDefault = React.lazy(() => import('../layout/LayoutDefault'))
 
 export default App;

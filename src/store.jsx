@@ -5,7 +5,6 @@ const initialState = {
 };
 
 const changeState = (state = initialState, { type, ...rest }) => {
-  console.log("STORE");
   switch (type) {
     case "set":
       return { ...state, ...rest };
