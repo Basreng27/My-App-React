@@ -2,6 +2,7 @@ import React from "react";
 import SidebarApp from "../components/SidebarApp";
 import HeaderApp from "../components/HeaderApp";
 import ContentApp from "../components/ContentApp";
+import FooterApp from "../components/FooterApp";
 
 const LayoutDefault = () => {
   return (
@@ -12,7 +13,7 @@ const LayoutDefault = () => {
         <div className="body flex-grow-1 px-3">
           <ContentApp />
         </div>
-        {/* APP FOOTER */}
+        <FooterApp />
       </div>
     </div>
   );
