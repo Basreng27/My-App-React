@@ -38,6 +38,9 @@ const FloatingLabels = React.lazy(() => import('../views/forms/floating-labels/F
 const Layout = React.lazy(() => import('../views/forms/layout/Layout'))
 const Validation = React.lazy(() => import('../views/forms/validation/Validation'))
 
+// Charts
+const Charts = React.lazy(() => import('../views/charts/Charts'))
+
 const routes = [
   // Dashboard
   { path: "/", exact: true, name: "Home" },
@@ -81,6 +84,9 @@ const routes = [
   { path: '/forms/floating-labels', name: 'Floating Labels', element: FloatingLabels },
   { path: '/forms/layout', name: 'Layout', element: Layout },
   { path: '/forms/validation', name: 'Validation', element: Validation },
+
+  // Chart
+  { path: '/charts', name: 'Charts', element: Charts },
 ];
 
 export default routes;

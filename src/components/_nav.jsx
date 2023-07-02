@@ -1,4 +1,4 @@
-import { cilCursor, cilDrop, cilNotes, cilPencil, cilPuzzle, cilSpeedometer } from "@coreui/icons";
+import { cilChartPie, cilCursor, cilDrop, cilNotes, cilPencil, cilPuzzle, cilSpeedometer } from "@coreui/icons";
 import CIcon from "@coreui/icons-react";
 import { CNavGroup, CNavItem, CNavTitle } from "@coreui/react";
 import React from "react";
@@ -181,6 +181,12 @@ const _nav = [
         to: '/forms/validation',
       },
     ],
+  },
+  {
+    component: CNavItem,
+    name: 'Charts',
+    to: '/charts',
+    icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
 ];
 
