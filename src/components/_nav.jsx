@@ -1,4 +1,4 @@
-import { cilChartPie, cilCursor, cilDrop, cilNotes, cilPencil, cilPuzzle, cilSpeedometer } from "@coreui/icons";
+import { cilChartPie, cilCursor, cilDrop, cilNotes, cilPencil, cilPuzzle, cilSpeedometer, cilStar } from "@coreui/icons";
 import CIcon from "@coreui/icons-react";
 import { CNavGroup, CNavItem, CNavTitle } from "@coreui/react";
 import React from "react";
@@ -187,6 +187,32 @@ const _nav = [
     name: 'Charts',
     to: '/charts',
     icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavGroup,
+    name: 'Icons',
+    icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'CoreUI Free',
+        to: '/icons/coreui-icons',
+        badge: {
+          color: 'success',
+          text: 'NEW',
+        },
+      },
+      {
+        component: CNavItem,
+        name: 'CoreUI Flags',
+        to: '/icons/flags',
+      },
+      {
+        component: CNavItem,
+        name: 'CoreUI Brands',
+        to: '/icons/brands',
+      },
+    ],
   },
 ];
 

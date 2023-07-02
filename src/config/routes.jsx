@@ -41,6 +41,11 @@ const Validation = React.lazy(() => import('../views/forms/validation/Validation
 // Charts
 const Charts = React.lazy(() => import('../views/charts/Charts'))
 
+// Icons
+const CoreUIIcons = React.lazy(() => import('../views/icons/coreui-icons/CoreUIIcons'))
+const Flags = React.lazy(() => import('../views/icons/flags/Flags'))
+const Brands = React.lazy(() => import('../views/icons/brands/Brands'))
+
 const routes = [
   // Dashboard
   { path: "/", exact: true, name: "Home" },
@@ -87,6 +92,12 @@ const routes = [
 
   // Chart
   { path: '/charts', name: 'Charts', element: Charts },
+
+  // Icons
+  { path: '/icons', exact: true, name: 'Icons', element: CoreUIIcons },
+  { path: '/icons/coreui-icons', name: 'CoreUI Icons', element: CoreUIIcons },
+  { path: '/icons/flags', name: 'Flags', element: Flags },
+  { path: '/icons/brands', name: 'Brands', element: Brands },
 ];
 
 export default routes;
