@@ -1,8 +1,8 @@
-import React from 'react'
-import { CCard, CCardBody, CCardHeader, CRow } from '@coreui/react'
-import { getIconsView } from '../brands/Brands.jsx'
-import { flagSet } from '@coreui/icons'
-import { DocsCallout } from '../../../components/Index.jsx'
+import React from "react";
+import { CCard, CCardBody, CCardHeader, CRow } from "@coreui/react";
+import { getIconsView } from "../brands/Brands.jsx";
+import { flagSet } from "@coreui/icons";
+import { DocsCallout } from "../../../components/Index.jsx";
 
 const CoreUIIcons = () => {
   return (
@@ -19,7 +19,7 @@ const CoreUIIcons = () => {
         </CCardBody>
       </CCard>
     </>
-  )
-}
+  );
+};
 
-export default CoreUIIcons
+export default CoreUIIcons;

@@ -7,4 +7,13 @@ import DocsExample from "./DocsExample";
 import DocsLink from "./DocsLink";
 import DocsCallout from "./DocsCallout";
 
-export { SidebarApp, LoadingApp, HeaderApp, ContentApp, FooterApp, DocsExample, DocsLink, DocsCallout };
+export {
+  SidebarApp,
+  LoadingApp,
+  HeaderApp,
+  ContentApp,
+  FooterApp,
+  DocsExample,
+  DocsLink,
+  DocsCallout,
+};
