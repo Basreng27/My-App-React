@@ -1,4 +1,4 @@
-import { cilDrop, cilPencil, cilPuzzle, cilSpeedometer } from "@coreui/icons";
+import { cilCursor, cilDrop, cilPencil, cilPuzzle, cilSpeedometer } from "@coreui/icons";
 import CIcon from "@coreui/icons-react";
 import { CNavGroup, CNavItem, CNavTitle } from "@coreui/react";
 import React from "react";
@@ -109,6 +109,29 @@ const _nav = [
         component: CNavItem,
         name: 'Tooltips',
         to: '/base/tooltips',
+      },
+    ],
+  },  
+  {
+    component: CNavGroup,
+    name: 'Buttons',
+    to: '/buttons',
+    icon: <CIcon icon={cilCursor} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Buttons',
+        to: '/buttons/buttons',
+      },
+      {
+        component: CNavItem,
+        name: 'Buttons groups',
+        to: '/buttons/button-groups',
+      },
+      {
+        component: CNavItem,
+        name: 'Dropdowns',
+        to: '/buttons/dropdowns',
       },
     ],
   },
