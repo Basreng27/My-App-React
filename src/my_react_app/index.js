@@ -1,7 +1,14 @@
 import React from "react";
+import App from "./views/App";
+import { createRoot } from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
+import store from "./store";
 
-function index() {
-  return <div>Hallo GUYS</div>;
-}
+createRoot(document.getElementById("my-react-app")).render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
 
-export default index;
+reportWebVitals();
